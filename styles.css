@@ -38,7 +38,7 @@ button {
 }
 
 button.active {
-    background-color: aliceblue;
+    background-color: red;
     color: white;
 }
 
@@ -56,4 +56,30 @@ button.active {
 
 .gridElement {
     user-select: none;
+}
+input {
+    border: 2px solid black;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #fca401;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(190, 5, 247);
+    cursor: pointer;
 }
